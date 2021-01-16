@@ -19,7 +19,7 @@ Dependencies: `java >= 1.8`, older versions may also work.
 **Linux** and **Mac**:
 
 ```bash
-git clone https://github.com/lyova-potyomkin/rainbow-sorting.git
+git clone https://github.com/ly0va/rainbow-sorting.git
 cd rainbow-sorting
 ./install.sh              # downloads processing-py.jar
 ```

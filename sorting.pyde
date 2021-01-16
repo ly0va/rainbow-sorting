@@ -5,7 +5,7 @@ from algorithms import *
 
 sorts = (
     cbubble,
-    cshaker, 
+    cshaker,
     cinsertion,
     cshell,
     cmerge,
@@ -20,13 +20,13 @@ def setup():
     colorMode(HSB, n)
     m = [list(range(0, n, step))*step for i in range(n)]
     k = len(sorts)
-    coros = sum(([s(m[i]) for i in range(j*n//k, (j+1)*n//k)] 
+    coros = sum(([s(m[i]) for i in range(j*n//k, (j+1)*n//k)]
                  for j, s in enumerate(sorts)), [])
     flags = [True]*n
     for row in m:
         shuffle(row)
         #row.reverse()
-    
+
 def draw():
     background(255)
     for i, row in enumerate(m):
@@ -40,6 +40,6 @@ def draw():
         noLoop()
     sleep(time)
 
-        
 
-        
+
+
